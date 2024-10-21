@@ -1,0 +1,118 @@
+/* Home Page Styles */
+
+.home {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #000;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #2f2f2f5d;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.hero-content:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  transition: text-shadow 0.3s;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #000;
+  background-color: #0ff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+.hero-btn:hover {
+  background-color: #00bcd4;
+  color: #fff;
+  box-shadow: 0 0 8px #00bcd4, 0 0 16px #00bcd4;
+}
+/* About Section */
+.about, .products-overview, .services-overview {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #1e1e1e;
+  margin: 20px 0;
+  margin-left: 20px; /* Move section slightly to the right */
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.about h2, .products-overview h2, .services-overview h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0ff;
+  transition: text-shadow 0.3s;
+}
+
+/* Product and Service Lists */
+.product-list, .service-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 20px; /* Move section slightly to the right */
+}
+
+.product-item, .service-item {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: left;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+.product-item:hover, .service-item:hover {
+  background-color: #48464632;
+  transform: scale(1.05);
+}
+
+.product-item h3, .service-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #0ff;
+}
+
+.product-item p, .service-item p {
+  font-size: 0.9rem;
+}

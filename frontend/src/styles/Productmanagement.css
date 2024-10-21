@@ -1,0 +1,119 @@
+/* src/styles/Productmanagement.css */
+
+/* Product Management Container */
+.product-management-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #201f1f;
+  padding: 20px;
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+}
+
+/* Title */
+.product-management-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0ff;
+}
+
+/* Add Product Button */
+.product-management-container .ant-btn-primary {
+  background-color: #0ff; /* Light blue button */
+  border-color: #0ff; /* Light blue border */
+  color: #000; /* Black text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.product-management-container .ant-btn-primary:hover {
+  background-color: #00ccff; /* Darker blue on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Product Table */
+.product-management-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #1e1e1e; /* Darker background for the table */
+}
+
+.product-management-table .ant-table-thead > tr > th {
+  background-color: #0ff; /* Bright color for header */
+  color: #000; /* Dark text color for header */
+  border-bottom: 2px solid #ddd;
+}
+
+.product-management-table .ant-table-tbody > tr:nth-child(odd) {
+  background-color: #f9cdcd; /* Darker background for odd rows */
+}
+
+.product-management-table .ant-table-tbody > tr:nth-child(even) {
+  background-color: #c6f8c1; /* Slightly darker background for even rows */
+}
+
+.product-management-table .ant-table-tbody > tr > td {
+  color: #000; /* White text color for data */
+  border-bottom: 1px solid #333; /* Slightly darker border for better contrast */
+}
+
+.product-management-table .ant-table-tbody > tr {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.product-management-table .description-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px; /* Adjust this width based on your design */
+}
+
+/* Form Modal */
+.product-management-modal .ant-modal-content {
+  background-color: #060505; /* Darker background for contrast */
+  color: #fff; /* White text color */
+}
+
+.product-management-modal .ant-modal-header {
+  background-color: #0ff; /* Light blue header */
+  color: #000; /* Black text color */
+}
+
+.product-management-modal .ant-modal-footer {
+  background-color: #1e1e1e; /* Darker footer background */
+}
+
+.product-management-modal .ant-form-item-label > label {
+  color: #fff; /* White label text */
+}
+
+.product-management-modal .ant-input,
+.product-management-modal .ant-input-textarea {
+  background-color: #333; /* Dark input background */
+  color: #fff; /* White text color */
+  border: 1px solid #ccc; /* Border color */
+}
+
+.product-management-modal .ant-btn {
+  border-radius: 4px; /* Button styling */
+}
+
+/* Loading Spinner */
+.product-management-container .loading {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .product-management-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-management-container {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,183 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo a {
+  color: #f0f0f0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar-logo a:hover {
+  color: #0ff; /* Neon color for hover effect */
+  text-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+
+.navbar-links li {
+  margin-left: 15px;
+}
+
+.navbar-links a {
+  display: inline-block;
+  padding: 6px 12px; /* Reduced padding for smaller buttons */
+  border-radius: 12px; /* Slightly curved borders */
+  text-decoration: none;
+  font-size: 0.9rem; /* Reduced font size */
+  font-weight: 600;
+  transition: color 0.3s, box-shadow 0.3s, background-color 0.3s;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover effects */
+.navbar-links a:hover {
+  box-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+  text-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+}
+
+/* Active link styles */
+.navbar-links a.active {
+  background-color: #0ff; /* Active link background color */
+  color: black; /* Active link text color */
+}
+
+/* Navbar Toggle Button for Mobile */
+.navbar-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-icon-line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar-icon:hover .navbar-icon-line {
+  background-color: #0ff; /* Neon color for hover effect */
+}
+
+/* Update these styles in Navbar.css */
+
+.navbar-settings {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s; /* Added transition for color change */
+}
+
+.navbar-settings:hover {
+  color: #0ff; /* Neon color for hover effect */
+}
+
+.navbar-settings .fa-cog {
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.navbar-settings-dropdown {
+  position: absolute;
+  top: -10px; /* Adjust based on the icon position */
+  left: -120px; /* Position to the left of the settings icon */
+  background: black;
+  border-radius: 20px;
+  padding: 5px 0; /* Smaller padding for smaller dropdown */
+  width: 120px; /* Adjust the width as needed */
+  display: none; /* Hidden by default */
+}
+
+.navbar-settings:hover .navbar-settings-dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.navbar-settings-dropdown a {
+  display: inline-block;
+  padding: 6px 12px; /* Reduced padding for smaller buttons */
+  border-radius: 12px; /* Slightly curved borders */
+  text-decoration: none;
+  font-size: 0.9rem; /* Reduced font size */
+  font-weight: 600;
+  transition: color 0.3s, box-shadow 0.3s, background-color 0.3s;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-settings-dropdown a:hover {
+  box-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+  text-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+}
+
+/* Align admin login link similar to navbar links */
+.navbar-settings-dropdown a.active {
+  background-color: #0ff; /* Active link background color */
+  color: black; /* Active link text color */
+}
+
+.navbar-settings-dropdown a:hover {
+  background-color: #0ff; /* Hover background color */
+  color: black; /* Hover text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+    max-height: 0;
+  }
+
+  .navbar-links.open {
+    max-height: 330px; /* Adjust based on number of links */
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navbar-links a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .navbar-icon {
+    display: flex;
+  }
+
+  /* Adjust dropdown positioning for responsiveness */
+  .navbar-settings-dropdown {
+    left: -90px; /* Adjusted left position for responsiveness */
+  }
+}

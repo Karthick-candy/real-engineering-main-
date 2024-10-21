@@ -1,0 +1,113 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .about-us {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Adjusted margin for better spacing */
+    margin-bottom: 20px; /* Additional margin between rows */
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px; /* Ensures all columns have a minimum width */
+    box-sizing: border-box;
+  }
+  
+  .section {
+    padding: 40px 20px;
+    border-radius: 12px;
+    background: #1a1a1a;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    text-align: justify; /* Justify text */
+    height: 100%; /* Ensure sections take full height */
+    margin-bottom: 20px; /* Additional margin between sections */
+  }
+  
+  .about-section {
+    background: linear-gradient(135deg, #0f202700, #203a43);
+  }
+  
+  .mission-section {
+    background: linear-gradient(135deg, #ba4f4f00, #444444);
+  }
+  
+  .quality-section {
+    background: linear-gradient(135deg, #24243e00, #877cfd);
+  }
+  
+  .innovation-section {
+    background: linear-gradient(135deg, #1f403700, #99f2c8);
+  }
+  
+  .customer-section {
+    background: linear-gradient(135deg, #2c3e5000, #4ca1af);
+  }
+  
+  .services-section {
+    background: linear-gradient(135deg, #283c8600, #45a247);
+  }
+  
+  .sustainability-section {
+    background: linear-gradient(135deg, #00042800, #004e92);
+  }
+  
+  .promise-section {
+    background: linear-gradient(135deg, #3b637700, #d388c0);
+  }
+  
+  .about-us h2,
+  .about-us h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center align headings */
+    color: #0ff; /* Cyan color for headings */
+  }
+  
+  .about-us p,
+  .about-us ul {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-us ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .about-us ul li {
+    margin-bottom: 10px;
+  }
+  
+  .about-us strong {
+    color: rgb(146, 245, 8);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  

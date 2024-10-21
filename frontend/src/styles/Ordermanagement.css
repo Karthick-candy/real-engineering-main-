@@ -1,0 +1,172 @@
+/* Order Management Container */
+.order-management {
+    height: 100%;
+    background-color: #1e1e2f; /* Darker base color */
+    animation: slideIn 0.8s ease-out;
+}
+
+/* Section Titles */
+.order-management h2 {
+    font-size: 2.5em;
+    color: #f39c12;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ff9f43, #ff6f61);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+/* Order List Section */
+.order-management .order-list-section {
+    margin-bottom: 15px;
+    padding: 25px;
+    background: linear-gradient(135deg, #2b2b40 30%, #363648);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Order List */
+.order-management .order-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards */
+}
+
+/* Order Card Styles */
+.order-management .order-card {
+    background-color: #232333;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-left: 6px solid #12f37b;
+    flex: 1 1 calc(100% - 30px); /* Full width for 1 card */
+}
+
+/* Responsive Widths for Order Cards */
+@media (min-width: 768px) {
+    .order-management .order-card {
+        flex: 1 1 calc(50% - 30px); /* Half width for 2 cards */
+    }
+}
+
+@media (min-width: 1024px) {
+    .order-management .order-card {
+        flex: 1 1 calc(33.33% - 30px); /* Third width for 3+ cards */
+    }
+}
+
+/* Close Button Styles */
+.order-management .close-btn {
+    background-color: #0ff;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 4px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.order-management .close-btn:hover {
+    background-color: #eb4230;
+    transform: translateY(-2px);
+}
+
+/* See All Button Styles */
+.see-all-btn {
+    margin-top: 10px;
+    padding: 6px 15px;
+    background-color: #ff00bf;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block; /* Make it block-level */
+    text-align: center; /* Center text */
+}
+
+.see-all-btn:hover {
+    background-color: #dc7ac5;
+}
+
+/* Product Name Color */
+.product-name {
+    color: #ff0000; /* Change this to your desired color */
+}
+
+/* Error Message Styles */
+.order-management .error-message {
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* Error Message Styles */
+.order-management .error-message {
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+/* Order Date Style */
+.order-date {
+    font-style: italic;
+    color: #bbb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .order-management {
+        padding: 20px;
+    }
+
+    .order-management .order-card {
+        padding: 20px;
+    }
+
+    .order-management .close-btn {
+        padding: 10px 20px;
+    }
+
+    .order-management h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-management h2 {
+        font-size: 1.6em;
+    }
+
+    .order-management .order-card h3 {
+        font-size: 1.4em;
+    }
+
+    .order-management .close-btn {
+        width: 100%;
+        font-size: 1em;
+    }
+}
