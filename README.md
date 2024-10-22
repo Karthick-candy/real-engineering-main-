@@ -8,9 +8,9 @@ Key Features:
     Product Display: Categorized products fetched from the database via API calls.
     Service Request: Users can request machinery services by filling out a form, and the details are sent directly to the company's WhatsApp account via API.
     Inquiry Form: Users can make inquiries or ask for support via a contact form. 
-				  Gmail Sign-In integration allows authenticated users to send inquiries directly to the company’s support team via email.
+	          Gmail Sign-In integration allows authenticated users to send inquiries directly to the company’s support team via email.
     Admin Interface: CRUD (Create, Read, Update, Delete) operations for products and admin management are handled through a secured admin dashboard. 
-					 Token-based authentication ensures that only authorized admins can make changes.
+		     Token-based authentication ensures that only authorized admins can make changes.
     Order Management: Admins can manage user orders, including closing orders after completion. 
     Company Map Location: A map showing the company's location is included in the Contact Us page for user convenience.
     
