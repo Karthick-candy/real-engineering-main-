@@ -194,8 +194,8 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_LOGOUT_ON_GET = True
 
-GOOGLE_CLIENT_ID = os.getenv('GOOGLE_CLIENT_ID')
-GOOGLE_CLIENT_SECRET = os.getenv('GOOGLE_CLIENT_SECRET')
+GOOGLE_CLIENT_ID = config('GOOGLE_CLIENT_ID')
+GOOGLE_CLIENT_SECRET = config('GOOGLE_CLIENT_SECRET')
 
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
@@ -217,9 +217,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'karthickktmt1502@gmail.com'  # Your Gmail address
-EMAIL_HOST_PASSWORD = 'prik hkxx cfqn yzku'   # App password for Gmail
-COMPANY_EMAIL_ADDRESS = 'karthickktmt1502@gmail.com'  # Company's email address
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')  # Your Gmail address
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')   # App password for Gmail
+COMPANY_EMAIL_ADDRESS = config('COMPANY_EMAIL_ADDRESS')  # Company's email address
 
 
 
